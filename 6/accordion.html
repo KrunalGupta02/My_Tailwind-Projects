@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
+</head>
+
+<body>
+    <div class="accordion p-5 bg-slate-900">
+
+        <div class="relative my-1">
+
+            <input class="peer absolute left-0 top-0 h-16 w-full cursor-pointer bg-red-300 p-5 opacity-0" type="radio"
+                name="panel" id="panel-1">
+
+            <div class="cursor-pointer rounded-md bg-white p-5">What is web-ui-kit</div>
+
+            <div
+                class="absolute right-3 top-3 rounded-full border p-2 shadow-md duration-500 rotate-90 peer-checked:-rotate-90 peer-checked:rounded-full peer-checked:bg-slate-900 peer-checked:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+
+            <div class="max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-screen">
+                <p class="p-4 text-white">web-ui-kit is an open-source library of interactive components built on top
+                    of
+                    Tailwind
+                    CSS including buttons, dropdowns, modals, navbars, and more.</p>
+            </div>
+        </div>
+
+        <div class="relative my-1">
+
+            <input class="peer absolute left-0 top-0 h-16 w-full cursor-pointer bg-red-300 p-5 opacity-0" type="radio"
+                name="panel" id="panel-2">
+
+            <div class="cursor-pointer rounded-md bg-white p-5">What is web-ui-kit</div>
+
+            <div
+                class="absolute right-3 top-3 rounded-full border p-2 shadow-md duration-500 rotate-90 peer-checked:-rotate-90 peer-checked:rounded-full peer-checked:bg-slate-900 peer-checked:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+
+            <div class="max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-screen">
+                <p class="p-4 text-white">web-ui-kit is an open-source library of interactive components built on top
+                    of
+                    Tailwind
+                    CSS including buttons, dropdowns, modals, navbars, and more.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

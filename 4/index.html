@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Animation</title>
+
+    <link rel="stylesheet" href="input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    keyframes: {
+                        cardFlip: {
+                            "0%": { transform: "rotateY(0deg);" },
+                            "50%": { transform: "rotateY(180deg)" },
+                            "100%": { transform: "rotateY(360deg)" },
+                        },
+                    },
+                    // Adding animation property
+                    animation: {
+                        cardFlip: "cardFlip 3s ease-in-out infinite",
+                    },
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body class="bg-black">
+
+    <div class="flex justify-center items-center">
+        <h1 class="font-bold text-3xl text-white m-5 border-b-4 border-red-500 w-fit text-center">
+            Card Animation</h1>
+    </div>
+
+    <div class="card-wrapper block m-auto relative w-24 h-36 animate-cardFlip">
+        <img src="img/front.png" alt="front" class="card absolute  w-24 h-36 ">
+        <img src="img/back.png" alt="back" class="card card-back w-24 h-36 rotate-180 hover:scale-0">
+    </div>
+</body>
+
+</html>
